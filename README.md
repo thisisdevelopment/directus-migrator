@@ -46,9 +46,9 @@ Use "directus-migrator [command] --help" for more information about a command.
 ```
 
 # Contributing 
-You can help to deliver a better fanunmarshaller, check out how you can do things [CONTRIBUTING.md](CONTRIBUTING.md)
+You can help to deliver a better directus-migrator, check out how you can do things [CONTRIBUTING.md](CONTRIBUTING.md)
 
 # License 
 © [This is Development BV](https://www.thisisdevelopment.nl), 2023
 ~time.Now()
-Released under the [Apache License](https://github.com/thisisdevelopment/fanunmarshal/blob/master/LICENSE)
+Released under the [Apache License](https://github.com/thisisdevelopment/directus-migrator/blob/master/LICENSE)
