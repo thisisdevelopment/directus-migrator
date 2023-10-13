@@ -1,0 +1,26 @@
+app_config:
+  backup_schema_path: ./backups/
+  log_level: info  # warn, error, debug, info
+
+directus_schema:  ## these are the default endpoints exposed by directus see https://docs.directus.io/reference/system/schema.html
+  auth_url: auth/login #POST
+  snapshot_url: schema/snapshot  # GET
+  diff_url: schema/diff # POST
+  apply_url: schema/apply #POST
+
+envs:
+  dev:
+    directus_url: http://localhost:8055 
+    directus_user: you@yourdomain.com
+    directus_pass: password
+
+  test: 
+    directus_url: https://tst.directus.your.dev.domain
+    directus_user: you@yourdomain.com
+    directus_pass: password
+
+  prod: 
+    directus_url: https://prod.directus.your.domain
+    directus_user: you@yourdomain.com
+    directus_pass: password
+
