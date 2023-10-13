@@ -6,10 +6,10 @@ This tool has a few commands
 * **status** - checks the status between two environements and shows the diff
 * **apply** - checks the status between two environements and applies the diff, this will automatically create a backup of your target environment schema
 * **backup** - backup a schema of environment 
-* **restore** - restores a schema to an environment (currently unsupport, check command output)
+* **restore** - restores a schema to an environment (currently unsupported, check command output)
 
 ## Usage
-First create a config file in the ./config directory. under **envs**: you can specify your environments (check **config/config.example.yaml** for reference)
+First create a config file in the ./config directory. under **envs**: you can specify your environments (check [config/config.example.yaml](https://github.com/thisisdevelopment/directus-migrator/blob/master/config/config.example.yaml) for reference)
 
 ### Commandline
 to check the status between dev and test environment
