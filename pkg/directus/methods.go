@@ -82,6 +82,12 @@ func (d *directus) Diff(ctx context.Context, schema string) (string, error) {
 		return "", err
 	}
 
+	// if there's no diff, directus returns empty response.
+	if len(body) == 0 {
+		ret, err := json.Marshal(map[string]string{"result": "identical"})
+		return string(ret), err
+	}
+
 	var res DirectusSchema
 	err = json.Unmarshal(body, &res)
 	if err != nil {
